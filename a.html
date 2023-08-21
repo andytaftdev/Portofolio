@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            justify-content: space-around;
+            background-color: aquamarine;
+        }
+        .dropdown{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 80px;
+            padding: 10px;
+            display: none;
+
+        }
+        .dropdown li{
+            list-style: none;
+
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+        }
+        .navburger{
+            display: none;
+        }
+        @media screen and (max-width:768px) {
+            .navburger{
+                display: block;
+            }
+            .navburger:hover .dropdown{
+                 display: block;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        
+        <div class="navburger">
+            <a href="#"> <b>?</b></a>
+            <ul class="dropdown">
+                <li><a href="#">i</a></li>
+                <li><a href="#">u</a></li>
+                <li><a href="#">f</a></li>
+                <li><a href="#">s</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

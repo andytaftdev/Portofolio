@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    font-family: "Oswald";
+    scroll-behavior: smooth;
+    
+
+}
+@keyframes bounce {
+    from{
+        transform: translatey(60%) scaleX(1.4);
+    }
+     to{
+        transform: translateY(-340%);
+    }
+    
+}
+@keyframes show {
+    from{
+        transform:scale(1);
+    }
+     to{
+        transform:scale(25);
+    }
+    
+}
+@keyframes shadow {
+    from{
+        transform: scale(1.2);
+    }
+
+    to{
+        transform: scale(0.4);
+    }
+    
+}
+@keyframes slide-show {
+    from{
+        transform: scale(0);
+        opacity: 0;
+
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 
+    var(--scroll-padding,5rem);
+}
+body.enable{
+    overflow: scroll;
+}
+.animate{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animate.gone{
+    display: none;
+}
+.balls{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 100%;
+    animation: bounce 1s 6 alternate forwards;
+    
+}
+.balls.load{
+    animation: show 1.3s alternate forwards;
+}
+.balls.load.gone{
+    display: none;
+}
+.shadow{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    opacity: 0.4;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 36%;
+    animation: shadow 1s 6 alternate;
+}
+.shadow.gone{
+    display: none;
+}
+
+
+.slide1 {
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+}
+.slide1.show{
+    animation: slide-show 0.6s alternate;
+    
+   
+}
+.count{
+    position: fixed;
+    width: 3%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 43%;
+    right: 3%;
+
+}
+.count h2{
+    transform: rotate(-90deg);
+    font-weight: 300;
+}
+.space{
+    width: 1%;
+    height: 70%;
+    border: black 1px solid;
+    background-color: black;
+}
+.navbar{
+    width: 100%;
+    height: 10%;
+    z-index: 0;
+     display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+    
+   
+   
+}
+ li{
+    
+    margin-right: 3.5vw;
+   
+    width: fit-content;
+    height: 4.5vh;
+    list-style-type: none;
+    
+   
+    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+   
+
+}
+li a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    
+}
+/* hero */
+.hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.menu{
+   width: 30%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.image-area1{
+    width: 34%;
+    height: 100%;
+}
+.image-area1 img{
+    
+      
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+}
+.title-area1{
+    width: 30%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-area1 h1{
+    font-size: 10rem;
+    font-weight: 700;
+}
+.rigth-area  {
+    width: 36%;
+    border-left: #E2E2E2 1px solid;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.text-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 60px;
+}
+
+.text-con h2{
+    font-weight: 400;
+}
+/* about slide */
+
+
+.about{
+    height: 100vh;
+    width: 100vw;
+}
+.up {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.up h2{
+    font-weight: 300;
+    margin-left: 10%;
+    margin-right: 20%;
+    font-size: 1.5rem;
+}
+.up i{
+    font-size: 1.5rem;
+}
+
+
+
+.inside{
+    width: 100%;
+    height: 80%;   
+    display: flex;
+    flex-direction: row;
+}
+.name{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0;
+}
+.first{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+.first h1{
+    font-size: 10rem;
+    font-weight: 300;
+}
+.second{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+.second h1{
+    font-size: 12rem;
+    font-weight: 700;
+    position: absolute;
+    top: 140%;
+}
+.info{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+}
+.info h1{
+    font-weight: 300;
+    font-size: 5rem;
+}
+.space-info{
+    height: 0.5%;
+    width: 80%;
+    background-color: black;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.info h2 {
+    font-weight: 400;
+    font-size:4.4rem;
+}
+.down{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.down h2{
+    font-weight: 300;
+    margin-right: 10%;
+    margin-left: 20%;
+    font-size: 1.5rem;
+    
+    
+}
+.down i{
+    font-size: 1.5rem;
+}
+/* project */
+.project{
+    width: 100vw;
+    height: 100vh;
+    background-color: #4F7BFF;
+    display: flex;
+    flex-direction: row;
+}
+.image-project{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-project{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-project h1{
+    font-size: 12.5rem;
+    color: #4F7BFF;
+    text-shadow: 
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000;
+}
+.title2-project{
+    color: white;
+    width: 70%;
+    height: 33%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+.container-project{
+    width: 50%;
+    
+}
+.title2-project h2 {
+    font-family: "League Spartan";
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.title2-project h3{
+    font-family: "League Spartan";
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.5%;
+}
+.title2-project p{
+    font-family: "League Spartan";
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+.title2-project button{
+    width: 30%;
+    height: 22%;
+    border-radius: 18px;
+    font-family: "League Spartan";
+    font-weight: 600;
+    background-color: white;
+    border: 2px black solid;
+}
+.footer-project{
+    
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-project h3 {
+    color: white;
+    font-size: 1rem;
+    font-family: "League Spartan";
+    font-weight: 600;
+}
+.middle-project{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+@media screen and (max-width: 1386px) {
+    .info h1 {
+        font-size: 4rem;
+    }
+    .info h2{
+        font-size: 3.4rem;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .info h1 {
+        font-size: 3rem;
+    }
+    .info h2 {
+        font-size: 2.4rem;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .first h1{
+        font-size: 8rem;
+    }
+    .second h1 {
+        font-size: 10rem;
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .count{
+        display: none;
+    }
+    .hero img{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .slide1{
+        width: 100vw;
+        height: 100vh;
+    }
+    .inside {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info {
+        align-items: center;
+    }
+    .info h1{
+        font-size: 2rem;
+    }
+    .info h2{
+        font-size: 1.7rem;
+    }
+    .name{
+        width: 100%;
+    }
+    .first{
+        width: 40%;
+    }
+    .second h1{
+        font-size: 9rem;
+        top: 123%;
+        left: 40%;
+    }
+    /* third slide */
+    .project .image-project img{
+        display: none;
+    }
+    .image-project{
+        display: none;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+    }
+    .project .title-project h1 {
+        font-size: 5rem;
+        margin-top: 10%;
+    }
+    .project .title-project{
+        width: 80%;
+        height: 100%;
+        
+    }
+    .project .title-project .title2-project{
+        width: 100%;
+        height: 50%;
+        margin-top:20%;
+
+    }
+    .container-project{
+        height: 100%;
+        width: 100%;
+    }
+    .container-project button {
+        width: 20%;
+        height: 15%;
+    }
+
+
+}
+
+    
