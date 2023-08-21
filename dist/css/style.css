@@ -144,13 +144,21 @@ body.enable{
 }
  li{
     
-    margin-right: 3.5vw;
-   
-    width: fit-content;
-    height: 4.5vh;
+    margin-right: 1.5vw;
+   border-radius: 30px;
+   display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 4vh;
+    width: 5vw;
     list-style-type: none;
     
    
+    
+}
+li:hover{
+    background-color: rgb(38, 38, 38) ;
     
 }
 ul{
@@ -171,6 +179,9 @@ li a {
     font-weight: 300;
     font-size: 1.2rem;
     
+}
+li:hover a{
+    color: white;
 }
 /* hero */
 .hero {

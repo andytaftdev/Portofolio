@@ -1,4 +1,6 @@
+
 const scroll = document.querySelector(".navbar");
+
 const navheight = scroll.offsetHeight;
 const animate = document.querySelector(".animate")
 const balls = document.querySelector(".balls")

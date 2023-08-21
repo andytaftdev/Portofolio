@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Montserrat:wght@600&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
         </div>
         <div class="hero">
             <div class="image-area1">
-                <img src="/asset/img/img-home.jpg" alt="">
+                <img src="/asset/img/img-home.jpg" >
             </div>
             <div class="title-area1">
                 <h1>TAFT</h1>
@@ -71,20 +71,20 @@
         </div>
         <div class="inside">
             <div class="name">
-                <div class="first">
+                <div class="first" data-aos="fade-up">
                     <h1>Andy</h1>
                 </div>
-                <div class="second">
+                <div class="second" >
                     <h1>TAFT</h1>
                 </div>
             </div>
             <div class="info">
-                <h1><b>Hello</b> my name is <b>Andy Taft</b><br>I am a
+                <h1 data-aos="fade-left"><b>Hello</b> my name is <b>Andy Taft</b><br>I am a
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;student &nbsp;&nbsp;&nbsp;
                     that learn<br>about <b>Programming</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     and<br>make <b>Website-Application.</b></h1>
-                <div class="space-info"></div>
-                <h2>Focusing on making an interactive <br>website and
+                <div class="space-info" data-aos="fade-left"></div>
+                <h2 data-aos="fade-left">Focusing on making an interactive <br>website and
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     application</h2>
             </div>
@@ -96,12 +96,12 @@
         </div>
     </div>
     <div class="project">
-        <div class="image-project">
+        <div class="image-project"data-aos="fade-right">
         <img src="/asset/img/savings-svg.svg" alt="">
         </div>
         <div class="title-project">
-            <h1>Savings</h1>
-            <div class="title2-project">
+            <h1 data-aos="fade-up">Savings</h1>
+            <div data-aos="fade-up" class="title2-project">
                 <div class="container-project">
                    <h2>Savings App</h2>
                <h3>About Savings</h3>
@@ -114,7 +114,7 @@
 
                
             </div>
-            <div class="footer-project">
+            <div data-aos="fade-up"class="footer-project">
                <h3>Android Studio</h3>
                <h3 class="middle-project">Final Project</h3>
                <h3>Pemuda Bagus</h3>
@@ -133,6 +133,11 @@
 
 
     <script src="/dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
 
 </body>
 
