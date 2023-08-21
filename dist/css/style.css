@@ -73,7 +73,7 @@ body.enable{
     height: 100px;
     background: white;
     border-radius: 100%;
-    animation: bounce 1s 6 alternate forwards;
+    animation: bounce 1s 4 alternate forwards;
     
 }
 .balls.load{
@@ -90,7 +90,7 @@ body.enable{
     border-radius: 100%;
     position: absolute;
     bottom: 36%;
-    animation: shadow 1s 6 alternate;
+    animation: shadow 1s 4 alternate;
 }
 .shadow.gone{
     display: none;
