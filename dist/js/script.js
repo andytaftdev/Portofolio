@@ -17,10 +17,10 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         balls.classList.toggle("load");
         shadow.classList.toggle("gone");
-       }, 3900);
+       }, 5000);
        setTimeout(() => {
         slide1.classList.toggle("show");
-       }, 4200);
+       }, 5300);
 
 
        setTimeout(() => {
@@ -29,5 +29,5 @@ window.addEventListener("DOMContentLoaded", () => {
         body.classList.toggle("enable");
         
         
-       }, 4400);
+       }, 5600);
 });
