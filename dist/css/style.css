@@ -538,5 +538,83 @@ li a {
 
 
 }
+@media screen and (max-width: 550px) {
+    .info h1{
+        font-size: 1.7rem;
+    }
+    .info h2 {
+        font-size: 1.4rem;
+    }
+    .second h1{
+        font-size: 8rem;
+        top: 123%;
+        left: 40%;
+    }
+}
+@media screen and (max-width: 468px) {
+    .info h1{
+        font-size: 1.5rem;
+    }
+    .info h2 {
+        font-size: 1.2rem;
+    }
+    .second h1{
+        font-size: 7.3rem;
+        top: 123%;
+        left: 30%;
+    }
+    .first{
+        width: 70%;
+    }
+    .first h1{
+        font-size: 8rem;
+    }
+}
+@media screen and (max-width: 409px) {
+    .info h1{
+        font-size: 1.4rem;
+    }
+    .info h2 {
+        font-size: 1.2rem;
+    }
+    .second{
+        height: 10%;
+    }
+    .second h1{
+        font-size: 7rem;
+        top: 131%;
+        left: 30%;
+    }
+    .first{
+        width: 70%;
+    }
+    .first h1{
+        font-size: 7.6rem;
+    }
+}
+@media screen and (max-width: 385px) {
+    .info h1{
+        font-size: 1.2rem;
+    }
+    .info h2 {
+        font-size: 1rem;
+    }
+    .second{
+        height: 10%;
+    }
+    .second h1{
+        font-size: 6.5rem;
+        top: 131%;
+        left: 30%;
+    }
+    .first{
+        width: 70%;
+    }
+    .first h1{
+        font-size: 7rem;
+    }
+}
+
+
 
     
