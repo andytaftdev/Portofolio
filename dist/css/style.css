@@ -109,19 +109,47 @@ body.enable{
 }
 .count{
     position: fixed;
-    width: 3%;
-    height: 20%;
+    width: 2%;
+    height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     top: 43%;
     right: 3%;
+    overflow: hidden;
+    
 
 }
-.count h2{
-    transform: rotate(-90deg);
+.normal-count{
+    transform: rotate(-90deg) translateY(10%) ;
+    height: 20%;
     font-weight: 300;
+    
+
+   
+}
+.moved-count{
+    margin-left: 10%;
+    transform: rotate(-90deg) translateY(10%) ;
+    height: 20%;
+    font-weight: 300;
+    transition: transform 0.4s ease-in;
+    
+}
+.moved-count.second{
+    margin-left: 10%;
+    transform: rotate(-90deg) translateY(-60%) ;
+    height: 20%;
+    font-weight: 300;
+    
+}
+.moved-count.third{
+    margin-left: 10%;
+    transform: rotate(-90deg) translateY(-130%) ;
+    height: 20%;
+    font-weight: 300;
+    
 }
 .space{
     width: 1%;
