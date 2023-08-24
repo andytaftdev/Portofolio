@@ -151,6 +151,13 @@ body.enable{
     font-weight: 300;
     
 }
+.moved-count.fourth{
+    margin-left: 10%;
+    transform: rotate(-90deg) translateY(-200%) ;
+    height: 20%;
+    font-weight: 300;
+    
+}
 .space{
     width: 1%;
     height: 70%;
@@ -374,6 +381,47 @@ li a {
     display: flex;
     flex-direction: row;
 }
+.hover{
+    z-index: -1;
+    background-color: #4f7bff;
+    width: 6%;
+    height: 10%;
+   
+    border: rgb(172, 172, 172) 2px solid;
+    border-radius: 70%;
+    position: absolute;
+}
+.project:hover .hover {
+    z-index: 10;
+    opacity: 1;
+   background-color:#4F7BFf;
+   
+   width: 6%;
+   height: 10%;
+   border: rgb(34, 33, 37) 2px solid;
+   border-radius: 100%;
+  
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   
+    animation: glow 3s infinite;
+    position: absolute;
+    transition: all 0.4s ease;
+    content: '';
+    
+    
+}
+.project .hover:hover{
+    scale: 1.1;
+    filter: blur(2px);
+}
+.hover a {
+   color: black;
+   text-decoration: none;
+   list-style-type: none;
+}
 .image-project{
     width: 35%;
     height: 100%;
@@ -432,15 +480,7 @@ li a {
     font-weight: 500;
     margin-bottom: 5%;
 }
-.title2-project button{
-    width: 30%;
-    height: 22%;
-    border-radius: 18px;
-    font-family: "League Spartan";
-    font-weight: 600;
-    background-color: white;
-    border: 2px black solid;
-}
+
 .footer-project{
     
     width: 100%;
@@ -461,6 +501,201 @@ li a {
     margin-left: 20%;
     margin-right: 20%;
 }
+/* contact area */
+
+.contact{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.contact-area{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-area h1{
+    font-weight: 700;
+    font-size: 5rem;
+    margin: 10%;
+}
+.box-contact{
+    width: 99%;
+    height: 75%;
+    border-top: #000 3px solid;
+    border-right: black 3px solid;
+    
+}
+.box-info{
+    width: 100%;
+    height: 70%;
+    
+    display: flex;
+    flex-direction: row;
+
+
+}
+.info-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+}
+.info-instagram{
+    margin-top: 20%;
+    width: 40%;
+    height: 6%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: #000 2px solid;
+}
+.info-instagram i{
+    scale: 1.8;
+    margin-right: 25%;
+    margin-left: 5%;
+}
+.fa-brands.fa-whatsapp{
+    margin-right: 20%;
+}
+.text-info-left{
+    font-weight: 300;
+    
+}
+.info-right{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+}
+.info-right h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 50%;
+}
+.info-right h4 {
+    font-weight: 300;
+}
+.button-contact{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-contact button{
+    width: 70%;
+    height: 30%;
+    border-radius: 20px;
+    font-family: "League Spartan";
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: white;
+    border-top: #000 3px solid;
+    border-left: #000 3px solid;
+    border-right: #000 3px solid;
+    border-bottom: #000 8px solid;
+}
+.button-contact button:hover{
+     opacity: 0.8;
+     transform: translateY(-10%); scale: 1;
+}
+.image-contact{
+    width: 55%;
+    height: 100%;
+}
+.image-info{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.image-info img{
+    border: #000 3px solid;
+    margin-left: 8%;
+    scale: 0.9;
+}
+.contact-icon{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.icon-instagram{
+    width: 5%;
+    height: 25%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 3%;
+    border: none;
+}
+.icon-instagram:hover{
+    opacity: 0.9;
+    transform: translateY(-10%) scale(1.1);
+    cursor: pointer;
+}
+.icon-instagram i{
+    scale: 2;
+    color: white;
+}
+.icon-linkedin{
+    width: 5%;
+    height: 25%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 3%;
+    border: none;
+
+}
+.icon-linkedin:hover{
+    opacity: 0.9;
+    transform: translateY(-10%) scale(1.1);
+    cursor: pointer;
+}
+.icon-linkedin i{
+    scale: 2;
+    color: white;
+
+}
+.icon-whatsapp{
+    width: 5%;
+    height: 25%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 10%;
+    border: none;
+}
+.icon-whatsapp:hover{
+    opacity: 0.9;
+    transform: translateY(-10%) scale(1.1);
+    cursor: pointer;
+}
+.icon-whatsapp i{
+    scale: 2.2;
+    color: white;
+}
+
 @media screen and (max-width: 1386px) {
     .info h1 {
         font-size: 4rem;
@@ -486,7 +721,7 @@ li a {
     }
     .second h1 {
         font-size: 10rem;
-        left: 15%;
+        left: 15%
     }
 }
 @media screen and (max-width: 1020px) {
