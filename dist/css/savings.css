@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    font-family: "League Spartan";
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.slide-1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4F7BFF;
+    overflow: hidden;
+}
+.slide-1 img{
+    position: absolute;
+    scale: 0.6;
+    top: 15%;
+    z-index: 1;
+}
+.slide-1 h4{
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+.slide-1 h2{
+    font-size: 8rem;
+    font-weight: 700;
+    margin-bottom: 20%;
+    
+}
+.slide-1 .moving-text{
+    width: 200vw;
+    height: fit-content;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 70%;
+    overflow-y: hidden;
+}
+.slide-1 h1{
+    
+    font-size: 10rem;
+    font-family: "Oswald";
+    text-shadow: 
+    2px 2px 0 rgb(34, 33, 37),
+    -2px 2px 0 rgb(34, 33, 37),
+    -2px -2px 0 rgb(34, 33, 37),
+    2px -2px 0 rgb(34, 33, 37);
+    color: #4F7BFF;
+    animation: text 17s alternate infinite both;
+    
+
+}
+@keyframes text {
+    from{
+        transform: translateX(-40%);
+    }
+    to{
+        transform: translateX(40%);
+    }
+}
+/* second */
+.slide-2{
+    height: 100vh;
+    overflow: hidden;
+    max-height: 100vh;
+    width: 100%;
+}
+.img-slide2{
+    position: absolute;
+    transform: rotate(-10deg);
+    scale: 0.9;
+    top: 108%;
+    left: -2%;
+    z-index: 1;
+    transition: all ease 1s;
+}
+.string-1{
+    width: 10%;
+    height: 5px;
+    background-color: #4F7BFF;
+    position: absolute;
+    top: 174%;
+    left: 27.3%;
+}
+.string-2{
+    width: 17.3%;
+    height: 5px;
+    background-color: #4F7BFF;
+    position: absolute;
+    top: 190%;
+    left: 20%;
+}
+.upper{
+    width: 100%;
+    height: 30%;
+    margin: 30px;
+    display: flex;
+}
+.title{
+    width: 65%;
+    height: 100%;
+    background-color: #4F7BFF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h2{
+    font-size: 8rem;
+    font-family: "Oswald";
+    margin-bottom: 3%;
+    margin-right: 40%;
+}
+.decs{
+    width: 30%;
+    height: 95%;
+    border-radius: 50px;
+    background-color: transparent;
+    border: #4F7BFF 3px solid;
+    margin: 5px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.decs h4{
+    font-size: 3rem;
+    margin: 20px;
+    font-weight: 300;
+    color: #4F7BFF;
+}
+.middle-1{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+.features{
+    height: 100%;
+    width: 50%;
+    background: #4F7BFF;
+    border-radius: 50px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.features h2{
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Oswald";
+    color: white;
+}
+.list{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con-list{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+
+    
+}
+ .con-list h4{
+    display: flex;
+    font-size: 2rem;
+    width: 100%;
+    color: white;
+    margin-top: 10px;
+    
+    
+}
+.middle-2{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 10px;
+    margin-right: 0;
+}
+.container{
+    width: 60%;
+    height: 95%;
+    border: #4F7BFF 3px solid;
+    border-radius: 50px;
+    margin-right: 3%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.container .blue-arrow{
+    margin-left: 3%;
+}
+.container .ic-slide2{
+    margin-left: 35%;
+}
+.container h3{
+    font-weight: 400;
+    color: #4F7BFF;
+    margin-left: 5%;
+    font-size: 2rem;
+}
+
+.bottom{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 10px;
+    margin-right: 0;
+    
+}
+
+
