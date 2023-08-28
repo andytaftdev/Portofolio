@@ -4,6 +4,114 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+@keyframes saving {
+    0% {
+        scale: 0;
+    }
+    40%{
+        scale: 1.4;
+    }
+    75%{
+        scale: 1;
+    }
+    
+}
+body{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    
+
+}
+body.on{
+    background-color: white;
+    overflow: scroll;
+    height: 200vh;
+}
+/* splash */
+
+.animate{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    color: white;
+    background-color: black;
+}
+.animate.gone{
+    transform: translateY(-150%);
+    transition: 0.6s ease-in-out;
+}
+.animate.gone.gones{
+    display: none;
+}
+.container-savings{
+   width: 85%;
+   height: 18%;
+   margin-left: 10%;
+   
+   
+   
+}
+.con-move{
+    width: 160%;
+    height: 100%;
+    overflow: hidden;
+}
+.con-move.show {
+    animation: saving 1s alternate both;
+    overflow: hidden;
+}
+
+.text-animate{
+    
+    font-size: 7rem;
+    margin-top: 3%;
+    transform: translateX(36%);
+}
+.text-animate.slide{
+    transform: translateX(0%);
+    transition: all 1s ease-in-out ;
+
+}
+.container-name{
+    width: 40%;
+    height: 12%;
+    margin-left: 5%;
+    margin-top: 2%;
+    
+}
+.container-name h1{
+    font-size: 8rem;
+    transform: translateY(-100%);
+    
+}
+.text-dev.show{
+    transform: translateY(-78%);
+    transition: all 1s ease-in-out ;
+}
+.text-dev.show.show1{
+    transform: translateY(-60%);
+    transition: all 1s ease-in-out ;
+}
+.text-dev.show.show1.show2{
+    transform: translateY(-38%);
+    transition: all 1s ease-in-out ;
+}
+.text-dev.show.show1.show2.show3{
+    transform: translateY(-18%);
+    transition: all 1s ease-in-out ;
+}
+.text-dev.show.show1.show2.show3.show4{
+    transform: translateY(1%);
+    transition: all 1s ease-in-out ;
+}
+
 
 
 .slide-1{
@@ -16,11 +124,25 @@
     background-color: #4F7BFF;
     overflow: hidden;
 }
+.slide-1.show{
+    transform: translateY(-100%);
+    transition: all 0.6s ease-in-out;
+}
 .slide-1 img{
     position: absolute;
     scale: 0.6;
     top: 15%;
+    opacity: 0;
     z-index: 1;
+}
+.slide-1.show img{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    
+
+}
+.image.show{
+    opacity: 1;
 }
 .slide-1 h4{
     font-size: 2rem;
@@ -36,7 +158,6 @@
 .slide-1 .moving-text{
     width: 200vw;
     height: fit-content;
-    position: absolute;
     justify-content: center;
     align-items: center;
     top: 70%;
@@ -67,9 +188,8 @@
 /* second */
 .slide-2{
     height: 100vh;
-    overflow: hidden;
-    max-height: 100vh;
-    width: 100%;
+    width: 100vw;
+    
 }
 .img-slide2{
     position: absolute;
@@ -79,14 +199,22 @@
     left: -2%;
     z-index: 1;
     transition: all ease 1s;
+    display: none;
+}
+.img-slide2.on{
+    display: flex;
 }
 .string-1{
+    display: none;
     width: 10%;
     height: 5px;
     background-color: #4F7BFF;
     position: absolute;
     top: 174%;
     left: 27.3%;
+}
+.string-1.on{
+    display: flex;
 }
 .string-2{
     width: 17.3%;
@@ -95,6 +223,10 @@
     position: absolute;
     top: 190%;
     left: 20%;
+    display: none;
+}
+.string-2.on{
+    display: flex;
 }
 .upper{
     width: 100%;
@@ -142,6 +274,8 @@
     justify-content: end;
     align-items: center;
     overflow: hidden;
+    
+    
 }
 .features{
     height: 100%;
