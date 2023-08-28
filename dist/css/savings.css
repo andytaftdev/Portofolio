@@ -17,7 +17,7 @@
     
 }
 body{
-    background-color: white;
+    background-color: rgb(36, 34, 52);
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -40,8 +40,8 @@ body.on{
     align-items: center;
     
     
-    color: #4F7BFF;
-    background-color: white;
+    color: rgb(36, 34, 52);
+    background-color: rgb(36, 34, 52);
 }
 .animate.gone{
     transform: translateY(-150%);
