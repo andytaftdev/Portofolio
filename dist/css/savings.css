@@ -138,7 +138,7 @@ body.on{
 }
 .slide-1.show img{
     opacity: 1;
-    transition: all 1s ease-in-out;
+    transition: all 1.01s ease-in-out;
     
 
 }
