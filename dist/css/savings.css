@@ -17,7 +17,7 @@
     
 }
 body{
-    background-color: rgb(36, 34, 52);
+    background-color: white;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -40,8 +40,8 @@ body.on{
     align-items: center;
     
     
-    color: rgb(36, 34, 52);
-    background-color: rgb(36, 34, 52);
+    color: #4F7BFF;
+    background-color: white;
 }
 .animate.gone{
     transform: translateY(-150%);
@@ -138,7 +138,7 @@ body.on{
 }
 .slide-1.show img{
     opacity: 1;
-    transition: all 1.01s ease-in-out;
+    transition: all 1s ease-in-out;
     
 
 }
