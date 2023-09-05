@@ -1,64 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .navbar{
-            width: 100vw;
-            height: 10vh;
-            display: flex;
-            justify-content: space-around;
-            background-color: aquamarine;
-        }
-        .dropdown{
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 80px;
-            padding: 10px;
-            display: none;
-
-        }
-        .dropdown li{
-            list-style: none;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* increment urutan dari besar ++
+    decrement urutan dari kecil --
+    
+    comparison operator
+    equal to ==
+    equal value and type ===
+    not equal !=
+    not equal value and type !==
+    greater than >
+    less than >
+    greater than or equal =>
+    less than or equal =<
+    ternary*/
 
 
-        }
-        .dropdown li a {
-            text-decoration: none;
-        }
-        .navburger{
-            display: none;
-        }
-        @media screen and (max-width:768px) {
-            .navburger{
-                display: block;
-            }
-            .navburger:hover .dropdown{
-                 display: block;
-            }
-            
-        }
-    </style>
+    /* 
+    tipe data js
+    
+    string adalah tipe data kata atau huruf  biasanya ada '' atau ""
+    number adalah tipe data yang isinya angka seperti 30 dan 50 
+    bigint adalah tipe bilangan bulat
+    boolean adalah kebenaran*/
+
+    /*  tipe data obejct merupakan kumpulan value yang memiliki property dan value(data)
+    tipe data array adalah tipe data yang tidak memilki value tetapi diurutkan ole index */
+    /* built in functioon adalah tipe data yang sudah ada
+    user defined fuction adalah function yang dibuat oleh developer itu sendiri  */
+  </style>
 </head>
-<body>
-    <div class="navbar">
-        
-        <div class="navburger">
-            <a href="#"> <b>?</b></a>
-            <ul class="dropdown">
-                <li><a href="#">i</a></li>
-                <li><a href="#">u</a></li>
-                <li><a href="#">f</a></li>
-                <li><a href="#">s</a></li>
-            </ul>
-        </div>
-        
-    </div>
-    <div class="body" style="width: 100px;">
-        <h1>adkwaokdalksdaw</h1>
-    </div>
+<body>  
+
+  <div class="rec-1" id="re-2" style="width: 100px; height: 100px; background-color: antiquewhite;"></div>
+  <div class="rec-2" id="re-1" style="width: 50px; height: 50px; background-color: aquamarine;"></div>
+  <button id="btn-count">count</button>
+  
+
+
+
+
+<script src="/a.js"></script>
 </body>
 </html>

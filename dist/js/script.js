@@ -53,3 +53,4 @@ window.addEventListener("scroll", () => {
     hover.style.left = x + "px" ;
   
   });
+  

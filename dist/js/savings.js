@@ -70,3 +70,45 @@ if (window.scrollY > 700) {
     image2.style.transform = `translateY(${0}%) rotate(-10deg)`;
 }
 });
+
+const slider = document.querySelector('.slider');
+const sliderT = document.querySelector('.slider-text')
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let slideIndex = 0;
+let slideText = 0;
+
+prevBtn.addEventListener('click', () => {
+  slideIndex = (slideIndex - 1 + slider.children.length) % slider.children.length;
+  slideText = (slideText - 1 + slider.children.height) % slider.children.length;
+  updateText()
+  updateSliderPosition();
+  console.log(slider.children.height)
+console.log(slideIndex)
+
+});
+
+nextBtn.addEventListener('click', () => {
+  slideIndex = (slideIndex + 1) % slider.children.length;
+  slideText = (slideText + 1) % slider.children.length;
+  updateText();
+  updateSliderPosition();
+  
+console.log(slideIndex)
+
+});
+
+
+function updateSliderPosition() {
+  const slideWidth = slider.children[0].clientWidth;
+  slider.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+}
+function updateText(){
+    const slideHeigth = sliderT.children[0].clientHeight;
+  sliderT.style.transform = `translateY(-${(slideHeigth * slideText)}px)`;
+
+}
+
+  updateText();
+updateSliderPosition();
