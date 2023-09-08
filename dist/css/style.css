@@ -60,7 +60,7 @@ body.enable{
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background-color: rgb(38, 38, 38);
+    background-color: #4F7BFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@ body.enable{
 .balls{
     width: 100px;
     height: 100px;
-    background: white;
+    background: #f2f7fd;
     border-radius: 100%;
     animation: bounce 1s 6 alternate forwards;
     
@@ -107,6 +107,9 @@ body.enable{
     
    
 }
+.navbar.load{
+    display: none;
+}
 .count{
     position: fixed;
     width: 2%;
@@ -120,6 +123,9 @@ body.enable{
     overflow: hidden;
     
 
+}
+.count.load{
+    display: none;
 }
 .normal-count{
     transform: rotate(-90deg) translateY(10%) ;
@@ -135,8 +141,10 @@ body.enable{
     height: 20%;
     font-weight: 300;
     transition: transform 0.4s ease-in;
+
     
 }
+
 .moved-count.second{
     margin-left: 10%;
     transform: rotate(-90deg) translateY(-60%) ;
@@ -625,7 +633,7 @@ li a {
 }
 .image-info img{
     border: #000 3px solid;
-    margin-left: 8%;
+    margin-left: 12%;
     scale: 0.9;
 }
 .contact-icon{
@@ -705,6 +713,9 @@ li a {
     .info h2{
         font-size: 3.4rem;
     }
+    .image-info img {
+        scale: 0.6;
+    }
 }
 @media screen and (max-width: 1170px) {
     .info h1 {
@@ -725,6 +736,10 @@ li a {
         font-size: 10rem;
         left: 15%
     }
+    .image-info img {
+        scale: 0.5;
+        margin: 0;
+    }
 }
 @media screen and (max-width: 1020px) {
     .info h1 {
@@ -744,6 +759,10 @@ li a {
     .second h1 {
         font-size: 9.5rem;
         left: 15%;
+    }
+    .image-info img {
+        scale: 0.4;
+        margin: 0;
     }
 }
 
@@ -820,7 +839,64 @@ li a {
         width: 20%;
         height: 15%;
     }
-
+    .image-info img {
+        display: none;
+    }
+    .image-info{
+        display: none;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact-area{
+        width: 100%;
+        height: 70%;
+    }
+    .box-contact{
+        border: none;
+        width: 100%;
+    }
+    .button-contact{
+        margin: 50px;
+        height: 15%;
+        width: 80%;
+        padding: 6px;
+    }
+    .button-contact button{
+        height: 100%;
+        width: 80%;
+    }
+    .icon-instagram{
+        width: fit-content;
+        height: fit-content;
+    }
+    .icon-instagram i {
+        margin: 15px;
+    }
+    .icon-linkedin{
+        width: fit-content;
+        height: fit-content;
+    }
+    .icon-linkedin i {
+        margin: 15px;
+    }
+    .icon-whatsapp{
+        width: fit-content;
+        height: fit-content;
+        padding: 13px 20px 13px 20px;
+        margin: 0;
+    }
+    .contact-icon{
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 @media screen and (max-width: 550px) {
