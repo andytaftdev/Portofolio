@@ -5,6 +5,9 @@
     
 
 }
+.hover {
+    display: none;
+}
 @keyframes bounce {
     from{
         transform: translatey(340%) scaleX(1.4);
@@ -389,7 +392,7 @@ li a {
     display: flex;
     flex-direction: row;
 }
-.hover{
+/* .hover{
     z-index: -1;
     background-color: #4f7bff;
     width: 6%;
@@ -424,7 +427,7 @@ li a {
 .project .hover:hover{
     scale: 1.1;
     filter: blur(2px);
-}
+} */
 .hover a {
    color: black;
    text-decoration: none;
@@ -602,6 +605,7 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
 }
 .button-contact button{
     width: 70%;
@@ -615,6 +619,8 @@ li a {
     border-left: #000 3px solid;
     border-right: #000 3px solid;
     border-bottom: #000 8px solid;
+    margin-bottom: 25%;
+
 }
 .button-contact button:hover{
      opacity: 0.8;
@@ -767,11 +773,35 @@ li a {
 }
 
 @media screen and (max-width: 880px) {
+    .shadow{
+        display: none;
+    }
+    @keyframes bounce {
+        from{
+            transform: translatey(240%) scaleX(1.4);
+        }
+         to{
+            transform: translateY(0%);
+        }
+        
+    }
+    .image-contact{
+        height: 60%;
+    }
+    .info-right h4 {
+        font-size: 0.9rem;
+    }
+    .contact-area h1 {
+        margin-top: 30%;
+    }
     .count{
         display: none;
     }
     .hero img{
         display: none;
+    }
+    .text-info-left{
+        margin-bottom: 10%;
     }
     .navbar{
         width: 100%;
@@ -856,15 +886,20 @@ li a {
         border: none;
         width: 100%;
     }
+   
     .button-contact{
-        margin: 50px;
         height: 15%;
-        width: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
         padding: 6px;
     }
     .button-contact button{
         height: 100%;
         width: 80%;
+        margin: 0;
     }
     .icon-instagram{
         width: fit-content;
@@ -896,6 +931,9 @@ li a {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .info-instagram i{
+        margin-bottom: 10%;
     }
 
 }
