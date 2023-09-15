@@ -150,21 +150,21 @@ body.enable{
 
 .moved-count.second{
     margin-left: 10%;
-    transform: rotate(-90deg) translateY(-60%) ;
+    transform: rotate(-90deg) translateY(-45%) ;
     height: 20%;
     font-weight: 300;
     
 }
 .moved-count.third{
     margin-left: 10%;
-    transform: rotate(-90deg) translateY(-130%) ;
+    transform: rotate(-90deg) translateY(-115%) ;
     height: 20%;
     font-weight: 300;
     
 }
 .moved-count.fourth{
     margin-left: 10%;
-    transform: rotate(-90deg) translateY(-200%) ;
+    transform: rotate(-90deg) translateY(-185%) ;
     height: 20%;
     font-weight: 300;
     
