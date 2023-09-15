@@ -124,7 +124,7 @@ body.enable{
     top: 43%;
     right: 3%;
     overflow: hidden;
-    
+    z-index: 10;
 
 }
 .count.load{
