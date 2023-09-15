@@ -5,9 +5,7 @@
     
 
 }
-.hover {
-    display: none;
-}
+
 @keyframes bounce {
     from{
         transform: translatey(340%) scaleX(1.4);
