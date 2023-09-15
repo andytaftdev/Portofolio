@@ -36,14 +36,49 @@
 </head>
 <body>  
 
-  <div class="rec-1" id="re-2" style="width: 100px; height: 100px; background-color: antiquewhite;"></div>
+  <!-- <div class="rec-1" id="re-2" style="width: 100px; height: 100px; background-color: antiquewhite;"></div>
   <div class="rec-2" id="re-1" style="width: 50px; height: 50px; background-color: aquamarine;"></div>
-  <button id="btn-count">count</button>
+  <button id="btn-count">count</button> -->
   
+<div id="container">
+  <p class="title"></p>
+  <p class="title"></p>
+  <p class="title"></p>
+  <p class="title" style="fon"></p>
+</div>
 
 
 
 
-<script src="/a.js"></script>
+<!-- <script src="/a.js"></script> -->
+
+
+<script>
+let area = document.getElementById('container');
+area.style.backgroundColor = "#F6C391";
+area.style.width = "100vw";
+area.style.height = "100vh";
+
+area.getElementsByClassName("title") [0].innerHTML = "ini font 4 rem";
+area.getElementsByClassName("title") [0].style.fontSize = "4rem";
+area.getElementsByClassName("title") [1].innerHTML = "ini font 3rem";
+area.getElementsByClassName("title") [1].style.fontSize = "3rem";
+area.getElementsByClassName("title") [2].innerHTML = "ini font 2rem";
+area.getElementsByClassName("title") [2].style.fontSize = "2rem";
+area.getElementsByClassName("title") [3].innerHTML = "ini font 1 rem";
+area.getElementsByClassName("title") [3].style.fontSize = "1rem";
+
+
+
+
+  // let date = Date();
+  // let textDate = document.getElementById('date');
+
+  // textDate.innerHTML = date
+
+  // document.querySelector('.tag').innerHTML = "hari ini hari jumat";
+
+  // console.log(date)
+</script>
 </body>
 </html>

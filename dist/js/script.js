@@ -102,9 +102,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("scroll", () => {
   console.log(window.scrollY);
-  const secondslide = window.scrollY > 550 && window.scrollY < 1550 ;
-  const thirdslide = window.scrollY > 1550 && window.scrollY < 2500 ;
-  const fourthslide = window.scrollY > 2500 && window.scrollY < 3050;
+  const secondslide = window.scrollY > 750 && window.scrollY < 1750 ;
+  const thirdslide = window.scrollY > 1750 && window.scrollY < 3000 ;
+  const fourthslide = window.scrollY > 3000 && window.scrollY < 4500;
   count.classList.toggle("second", secondslide);
   count.classList.toggle("third", thirdslide);
   count.classList.toggle("fourth", fourthslide);
